@@ -13,6 +13,11 @@
 		7E62A24123AA9BB700D23AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E62A24023AA9BB700D23AFA /* Assets.xcassets */; };
 		7E62A24423AA9BB700D23AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E62A24223AA9BB700D23AFA /* LaunchScreen.storyboard */; };
 		7E62A25123AA9D3400D23AFA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */; };
+		B59E26BB26B9E1EE007ED131 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59E26BA26B9E1EE007ED131 /* Card.swift */; };
+		B59E26BD26B9E469007ED131 /* TopLevelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59E26BC26B9E469007ED131 /* TopLevelObject.swift */; };
+		B59E26C026B9E675007ED131 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59E26BF26B9E675007ED131 /* CardController.swift */; };
+		B59E26C526B9E7B3007ED131 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59E26C426B9E7B3007ED131 /* CardError.swift */; };
+		B59E26C826B9F455007ED131 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59E26C726B9F455007ED131 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		7E62A24523AA9BB700D23AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		7EC27C5023B9EADC002859DD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B59E26BA26B9E1EE007ED131 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B59E26BC26B9E469007ED131 /* TopLevelObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelObject.swift; sourceTree = "<group>"; };
+		B59E26BF26B9E675007ED131 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		B59E26C426B9E7B3007ED131 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		B59E26C726B9F455007ED131 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,9 @@
 		7E62A23623AA9BB700D23AFA /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
-				7E62A25523AA9D5300D23AFA /* View Controllers */,
-				7E62A25423AA9D4800D23AFA /* Model Controllers */,
-				7E62A25223AA9D3E00D23AFA /* Models */,
+				B59E26C226B9E77D007ED131 /* Views */,
+				B59E26BE26B9E66A007ED131 /* Controllers */,
+				B59E26B926B9E1DA007ED131 /* Models */,
 				7E62A25323AA9D4200D23AFA /* Helpers */,
 				7E62A24B23AA9BBE00D23AFA /* Resources */,
 			);
@@ -74,39 +83,69 @@
 				7E62A23723AA9BB700D23AFA /* AppDelegate.swift */,
 				7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */,
 				7E62A24023AA9BB700D23AFA /* Assets.xcassets */,
-				7E62A24223AA9BB700D23AFA /* LaunchScreen.storyboard */,
 				7E62A24523AA9BB700D23AFA /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7E62A25223AA9D3E00D23AFA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		7E62A25323AA9D4200D23AFA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */,
+				B59E26C426B9E7B3007ED131 /* CardError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		7E62A25423AA9D4800D23AFA /* Model Controllers */ = {
+		B59E26B926B9E1DA007ED131 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B59E26BA26B9E1EE007ED131 /* Card.swift */,
+				B59E26BC26B9E469007ED131 /* TopLevelObject.swift */,
 			);
-			path = "Model Controllers";
+			path = Models;
 			sourceTree = "<group>";
 		};
-		7E62A25523AA9D5300D23AFA /* View Controllers */ = {
+		B59E26BE26B9E66A007ED131 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B59E26C626B9F43E007ED131 /* ViewControllers */,
+				B59E26C126B9E67B007ED131 /* ModelControllers */,
 			);
-			path = "View Controllers";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B59E26C126B9E67B007ED131 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B59E26BF26B9E675007ED131 /* CardController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B59E26C226B9E77D007ED131 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B59E26C326B9E781007ED131 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B59E26C326B9E781007ED131 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
+				7E62A24223AA9BB700D23AFA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B59E26C626B9F43E007ED131 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B59E26C726B9F455007ED131 /* CardViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +220,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E62A25123AA9D3400D23AFA /* UIViewControllerExtension.swift in Sources */,
+				B59E26C026B9E675007ED131 /* CardController.swift in Sources */,
 				7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */,
 				7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */,
+				B59E26C826B9F455007ED131 /* CardViewController.swift in Sources */,
+				B59E26BB26B9E1EE007ED131 /* Card.swift in Sources */,
+				B59E26C526B9E7B3007ED131 /* CardError.swift in Sources */,
+				B59E26BD26B9E469007ED131 /* TopLevelObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -312,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
